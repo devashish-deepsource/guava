@@ -861,7 +861,7 @@ public class ClassSanityTesterTest extends TestCase {
     public boolean equals(Object obj) {
       if (obj instanceof SameFloatInstance) {
         SameFloatInstance that = (SameFloatInstance) obj;
-        return i == that.i;
+        return Double.compare(i, that.i) == 0;
       }
       return false;
     }
@@ -884,7 +884,7 @@ public class ClassSanityTesterTest extends TestCase {
     public boolean equals(Object obj) {
       if (obj instanceof SameDoubleInstance) {
         SameDoubleInstance that = (SameDoubleInstance) obj;
-        return i == that.i;
+        return Double.compare(i, that.i) == 0;
       }
       return false;
     }

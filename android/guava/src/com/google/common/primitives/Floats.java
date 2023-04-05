@@ -660,7 +660,7 @@ public final class Floats extends FloatsMethodsForWeb {
           return false;
         }
         for (int i = 0; i < size; i++) {
-          if (array[start + i] != that.array[that.start + i]) {
+          if (Double.compare(array[start + i], that.array[that.start + i]) != 0) {
             return false;
           }
         }
