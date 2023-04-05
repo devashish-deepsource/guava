@@ -667,7 +667,7 @@ public final class Doubles extends DoublesMethodsForWeb {
           return false;
         }
         for (int i = 0; i < size; i++) {
-          if (array[start + i] != that.array[that.start + i]) {
+          if (Double.compare(array[start + i], that.array[that.start + i]) != 0) {
             return false;
           }
         }
